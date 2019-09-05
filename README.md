@@ -2,6 +2,8 @@
 We study the utility of point clouds derived from tri-stereo satellite imagery for semantic1segmentation for Convolutional Neural Networks (CNNs). In particular, we examine if the geometric information, additional to color, has an influence on the segmentation performance for segmenting clutter, roads, buildings, trees, and vehicles.
 
 # Authors by Institution
+
+## Vienna University of Economics and Business
 [Assoc. Prof. Dr. Ronald Hochreiter (Projekt Manager)](https://scholar.google.at/citations?hl=de&user=NdGSq4EAAAAJ)
 
 BSc. (WU) Andrea Siposova
@@ -10,19 +12,19 @@ BSc. (WU) Niklas Schmidinger
 
 [BSc. (WU) Stefan Bachhofner](https://scholar.google.at/citations?hl=de&user=-WZ0YuUAAAAJ)
 
-
+## Vienna University of Technology
 [Univ.Prof. Dipl.-Ing. Dr.techn. Pfeifer Norbert](https://scholar.google.at/citations?user=-HuwYEMAAAAJ&hl=en)
 
 [MSc. Ana-Maria Loghin](https://scholar.google.at/citations?hl=en&user=E_HkvF8AAAAJ&view_op=list_works)
 
 Dipl.-Ing. Dr.techn. Johannes Otepka-Schremmer
 
-
+## Siemens AG Austria
 [Dr. Michael Hornacek](https://scholar.google.at/citations?user=llItOJ8AAAAJ&hl=en)
 
 [Dr. Olaf Kähler](http://www.robots.ox.ac.uk/~olaf/)
 
-
+## Vermessung Schmid ZT GmbH
 [Mag. Nikolaus Schiller](https://at.linkedin.com/in/nikolaus-schiller-37921418)
 
 
