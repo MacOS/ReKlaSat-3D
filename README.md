@@ -8,7 +8,7 @@ We study the utility of point clouds derived from tri-stereo satellite imagery f
 - pytorch 1.2 or higher
 
 # Installation
-We recommend that you use anaconda to separate the environment.
+We recommend that you use [anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) to separate the environment.
 
 
 The following command creates the conda environment ```py3-mink``` and installs the necessary python dependencies.
