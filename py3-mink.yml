@@ -1,0 +1,13 @@
+name: py3-mink
+channels:
+  - conda-forge
+  - pytorch
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.7
+  - openblas
+  - numpy
+  - google-sparsehash
+  - pytorch
+  - torchvision
