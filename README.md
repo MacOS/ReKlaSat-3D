@@ -10,6 +10,17 @@ We study the utility of point clouds derived from tri-stereo satellite imagery f
 # Installation
 We recommend that you use anaconda to separate the environment.
 
+
+The following command creates the conda environment ```py3-mink``` and installs the necessary python dependencies.
+```sh
+conda env create -f py3-mink.yml
+```
+To install the Minkowski Engine in the created environment run
+```sh
+conda activate py3-mink
+sh install_minkovski_engine.sh
+```
+
 # Authors by Institution
 
 ## Vienna University of Economics and Business
