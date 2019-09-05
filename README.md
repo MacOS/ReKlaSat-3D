@@ -7,6 +7,9 @@ We study the utility of point clouds derived from tri-stereo satellite imagery f
 - CUDA 10.0 or higher
 - pytorch 1.2 or higher
 
+# Installation
+We recommend that you use anaconda to separate the environment.
+
 # Authors by Institution
 
 ## Vienna University of Economics and Business
