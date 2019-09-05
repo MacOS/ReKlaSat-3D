@@ -1,6 +1,12 @@
 # Semantic Segmentation of Point Clouds Derived from Tri-Stereo Pleiades Satellite Imagery
 We study the utility of point clouds derived from tri-stereo satellite imagery for semantic1segmentation for Convolutional Neural Networks (CNNs). In particular, we examine if the geometric information, additional to color, has an influence on the segmentation performance for segmenting clutter, roads, buildings, trees, and vehicles.
 
+# Requirements
+- Ubuntu 14.04 or higher
+- Python 3.6 or higher
+- CUDA 10.0 or higher
+- pytorch 1.2 or higher
+
 # Authors by Institution
 
 ## Vienna University of Economics and Business
