@@ -18,7 +18,7 @@ conda env create -f py3-mink.yml
 To install the Minkowski Engine in the created environment run
 ```sh
 conda activate py3-mink
-sh install_minkovski_engine.sh
+sh install_minkowski_engine.sh
 ```
 
 # Authors by Institution
