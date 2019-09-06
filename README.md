@@ -26,7 +26,7 @@ sh install_minkowski_engine.sh
 ## Vienna University of Economics and Business
 [Assoc. Prof. Dr. Ronald Hochreiter (Projekt Manager)](https://scholar.google.at/citations?hl=de&user=NdGSq4EAAAAJ)
 
-BSc. (WU) Andrea Siposova
+[BSc. (WU) Andrea Siposova](https://at.linkedin.com/in/andrea-siposova)
 
 BSc. (WU) Niklas Schmidinger
 
