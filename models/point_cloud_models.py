@@ -17,7 +17,7 @@ __all__ = [
 
 STATE_DICT_PREFIX = 'STATE_DICT_EXPERIMENT_ITERATION_'
 STATE_DICT_SUFIX = '.pt'
-MODELS_BASE_URL = 'https://https://github.com/MacOS/ReKlaSat-3D/tree/master/models/weights'
+MODELS_BASE_URL = 'http://hosting.wu.ac.at/reklasat3d/models/weights'
 model_urls_base = {
     'coordinates': f'{MODELS_BASE_URL}/coordinates',
     'coordinates_colors': f'{MODELS_BASE_URL}/coordinates_colors'
