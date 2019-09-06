@@ -21,6 +21,57 @@ conda activate py3-mink
 sh install_minkowski_engine.sh
 ```
 
+# Examples
+
+## Get a list of all entrypoints we provide
+
+```py
+import torch
+
+entrypoints = torch.hub.list('MacOS/ReKlaSat-3D', force_reload=True)
+
+print(entrypoints)
+```
+
+
+## Load the coordinates Convolutional Neural Network
+
+```py
+import torch
+
+model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates')
+```
+
+```py
+import torch
+
+model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_epoch', epoch=40)
+```
+
+## Load the coordinates and colors Convolutional Neural Network
+
+```py
+import torch
+
+model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_colors')
+```
+
+```py
+import torch
+
+model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_colors_epoch', epoch=40)
+```
+
+## Only get MinkUNet34C
+
+```py
+import torch
+
+model = torch.hub.load('MacOS/ReKlaSat-3D', 'get_minkunet34c')
+```
+
+
+
 # Authors by Institution
 
 ## Vienna University of Economics and Business
