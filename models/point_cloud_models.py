@@ -40,6 +40,10 @@ def coordinates(progress=True):
 
     Args:
         progress (bool): If True, displays a progress bar of the download to stderr
+
+    How to use:
+        > import torch
+        > model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates')
     '''
     EPOCH = 50
 
@@ -63,6 +67,10 @@ def coordinates_epoch(epoch=50, progress=True):
     Args:
         epoch (int): Specifies the class weights to be returned.
         progress (bool): If True, displays a progress bar of the download to stderr.
+
+    Example:
+        > import torch
+        > model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_epoch', epoch=40)
     '''
     model = MinkUNet34C(in_channels=C_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
 
@@ -82,6 +90,10 @@ def coordinates_colors(progress=True):
 
     Args:
         progress (bool): If True, displays a progress bar of the download to stderr.
+
+    How to use:
+        > import torch
+        > model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_colors')
     '''
     EPOCH = 50
 
@@ -105,6 +117,10 @@ def coordinates_colors_epoch(epoch=50, progress=True):
     Args:
         epoch (int): Specifies the class weights to be returned.
         progress (bool): If True, displays a progress bar of the download to stderr.
+
+    Example:
+        > import torch
+        > model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_colors_epoch', epoch=40)
     '''
     model = MinkUNet34C(in_channels=CC_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
 
@@ -127,5 +143,8 @@ def get_minkunet34c(progress=True, **kwargs):
             https://github.com/StanfordVL/MinkowskiEngine/blob/master/examples/minkunet.py and
             https://stanfordvl.github.io/MinkowskiEngine/demo/interop.html
 
+    How to use:
+        > import torch
+        > model = torch.hub.load('MacOS/ReKlaSat-3D', 'get_minkunet34c')
     '''
     return MinkUNet34C(**kwargs)
