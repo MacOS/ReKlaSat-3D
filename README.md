@@ -79,7 +79,7 @@ model = torch.hub.load('MacOS/ReKlaSat-3D', 'get_minkunet34c')
 
 [BSc. (WU) Andrea Siposova](https://at.linkedin.com/in/andrea-siposova)
 
-BSc. (WU) Niklas Schmidinger
+[BSc. (WU) Niklas Schmidinger](https://github.com/nsmdgr)
 
 [BSc. (WU) Stefan Bachhofner](https://scholar.google.at/citations?hl=de&user=-WZ0YuUAAAAJ)
 
@@ -88,7 +88,7 @@ BSc. (WU) Niklas Schmidinger
 
 [MSc. Ana-Maria Loghin](https://scholar.google.at/citations?hl=en&user=E_HkvF8AAAAJ&view_op=list_works)
 
-Dipl.-Ing. Dr.techn. Johannes Otepka-Schremmer
+[Dipl.-Ing. Dr.techn. Johannes Otepka-Schremmer](https://www.geo.tuwien.ac.at/staff/1013/otepka-schremmer-johannes)
 
 ## Siemens AG Austria
 [Dr. Michael Hornacek](https://scholar.google.at/citations?user=llItOJ8AAAAJ&hl=en)
