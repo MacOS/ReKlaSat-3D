@@ -21,6 +21,28 @@ conda activate py3-mink
 sh install_minkowski_engine.sh
 ```
 
+# How to make a prediction
+
+```py
+import torch
+
+def predict(model, point_cloud):
+    model.eval()
+
+    loss = model(point_cloud)
+
+    _, y_pred = torch.max(loss.F, dim=1)
+
+    return y_pre
+
+
+model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates')
+
+x = load_point_cloud()
+y_pre = predict(model, point_cloud)
+```
+
+
 # Examples
 
 ## Get a list of all entrypoints we provide
