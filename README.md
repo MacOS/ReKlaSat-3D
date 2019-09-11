@@ -25,11 +25,15 @@ sh install_minkowski_engine.sh
 
 ```py
 import torch
+import MinkowskiEngine as ME
 
-def predict(model, point_cloud):
+def predict(model, features, coordinates):
     model.eval()
 
-    loss = model(point_cloud)
+    point_cloud = ME.SparseTensor(features, coords=coordinates)
+
+    with torch.no_grad():
+        loss = model(point_cloud)
 
     _, y_pred = torch.max(loss.F, dim=1)
 
