@@ -32,23 +32,61 @@ sh install_minkowski_engine.sh
 import torch
 import MinkowskiEngine as ME
 
-def predict(model, features, coordinates):
-    model.eval()
+# For loading LiDar files
+from laspy.file import File
 
-    point_cloud = ME.SparseTensor(features, coords=coordinates)
+
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+
+def predict(model, features, coordinates):
+    '''
+        Takes the given model and returns its predictions for the given features,
+        and coordinates. Note that only the features are used for making the predictions.
+
+        The predictions are sent back to the cpu and returned as a numpy array.
+    '''
+    model.eval()
+    model.to(device)
+
+    point_cloud = ME.SparseTensor(features, coords=coordinates).to(device)
 
     with torch.no_grad():
         loss = model(point_cloud)
 
     _, y_pred = torch.max(loss.F, dim=1)
 
-    return y_pre
+    return y_pre.cpu().numpy()
+
+
+def load_point_cloud(path_to_point_cloud):
+    '''
+        Opens a point_cloud in read mode.
+    '''
+    return File(path_to_point_cloud, mode="r")
+
+
+def load_coordinates_from_point_cloud(path_to_point_cloud):
+    '''
+        Returns a numpy array for the point clouds coordinates.
+    '''
+    point_cloud = load_point_cloud(path_to_point_cloud=path_to_point_cloud)
+    coordinates = np.vstack([point_cloud.X, point_cloud.Y, point_cloud.Z]).transpose()
+    return coordinates
+
+
+def normalize_coordinates(coordinates, denominator=10000):
+    '''
+        Normalizes the given coordinates, i.e. all coordinates are then in the range
+        [0, 1].
+    '''
+    return np.divide(coordinates, denominator)
 
 
 model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates')
-
-x = load_point_cloud()
-y_pre = predict(model, point_cloud)
+coordinates = load_coordinates_from_point_cloud(path_to_point_cloud="./data/my_point_cloud.laz")
+features = normalize_coordinates(coordinates=coordinates)
+y_pre = predict(model=model, features=features, coordinates=coordinates)
 ```
 
 
