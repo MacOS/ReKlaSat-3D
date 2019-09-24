@@ -6,6 +6,20 @@
 
 We study the utility of point clouds derived from tri-stereo satellite imagery for semantic segmentation with Generalized Sparse Convolutional Neural Networks. In particular, we examine if the geometric information, additional to color, has an influence on the segmentation performance for segmenting clutter, roads, buildings, trees, and vehicles. In this regard, we train a Convolutional Neural Network that uses generalized sparse convolution one time solely on geometric information, and one time on geometric as well as color information. Our study area is located in Waldviertel (Forest Quarter), a region in Lower Austria.  With elevations ranging from a minimum of 572 m a.s.l. to a maximum of 749 m a.s.l., the territory is a hilly region covered mainly by forests, agricultural- and grass-lands. Pléades, an European Very High Resolution (VHR) satellite systems, captured the study area late morning of June 13th 2017, around 10:10 a.m. in North-South direction.  We compare the point cloud segmentation results in two ways. First, we compare it with the performance of a convolutional neural network that that was only trained on color. Second, we compare these results with strong baselines. Additionally, we report, inter alia, the F1 score, Kappa coefficient, and Jaccard Index.
 
+<p align="center">
+    <img width="1080" height="520"  src="./Study_area_location.jpg">
+</p>
+
+Waldviertel, Lower Austria: (a) Overview map of Austria with marked location of study area; (b) Pléiades orthophoto of Waldviertel; the selected area used for semantic segmentation is marked with yellow.
+
+
+
+<p align="center">
+    <img src="./classes_all.jpg">
+</p>
+
+Examples of point clouds derived form tri-stereo satellite imagery for each class: (a) Clutter; (b) Roads; (c) Buildings; (c) Trees; (e) Vehicles.
+
 # Requirements
 - Ubuntu 14.04 or higher
 - Python 3.6 or higher
