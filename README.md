@@ -15,9 +15,9 @@
 **[2.3.1 Segmentation Results](#segmentation-results)**<br>
 **[2.3.2 Study Area](#study-area)**<br>
 <br>
-**[3. General Information](#general_information)**<br>
-**[3.1 Authors by Institution](#authors_by_institution)**<br>
-**[3.2 Project Partners](#project_partners)**<br>
+**[3. General Information](#general-information)**<br>
+**[3.1 Authors by Institution](#authors-by-institution)**<br>
+**[3.2 Project Partners](#project-partners)**<br>
 **[3.3 Funding](#funding)**<br>
 
 
@@ -216,7 +216,7 @@ Examples of point clouds derived form tri-stereo satellite imagery for each clas
 [Mag. Nikolaus Schiller](https://at.linkedin.com/in/nikolaus-schiller-37921418)
 
 
-## Projekt Partners
+## Project Partners
 [Vienna University of Economics and Business, Research Institute for Computational Methods. (Projet Coordinator)](https://www.wu.ac.at/en/firm)
 
 [Vienna University of Technology, Department of Geodesy and Geoinformation.](https://www.geo.tuwien.ac.at/)
