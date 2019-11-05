@@ -24,7 +24,7 @@ Generalized Sparse Convolutional Neural Networks for Semantic Segmentation of Po
 <br>
 **[2. Paper](#paper)**<br>
 **[2.1 Abstract](#abstract)**<br>
-**[2.3 Tables and Figures](#figures)**<br>
+**[2.3 Tables and Figures](#tables-and-figures)**<br>
 **[2.3.1 Segmentation Results](#segmentation-results)**<br>
 **[2.3.2 Study Area](#study-area)**<br>
 <br>
