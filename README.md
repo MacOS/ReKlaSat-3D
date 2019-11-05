@@ -6,12 +6,18 @@
 
 # Table of Contents
 [Paper](#paper)
+
 [Abstract](#abstract)
+
 [Figures](#figures)
 
+
 [General Information](#general_information)
+
 [Authors by Institution](#authors_by_institution)
+
 [Project Partners](#project_partners)
+
 [Funding](#funding)
 
 
