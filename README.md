@@ -170,10 +170,10 @@ import torch
 
 model = torch.hub.load('MacOS/ReKlaSat-3D', 'get_minkunet34c')
 ```
-<a name="general_information"/>
+
+
 # General Information
 
-<a name="authors_by_institution"/>
 ## Authors by Institution
 
 ### Vienna University of Economics and Business
@@ -202,7 +202,7 @@ model = torch.hub.load('MacOS/ReKlaSat-3D', 'get_minkunet34c')
 ### Vermessung Schmid ZT GmbH
 [Mag. Nikolaus Schiller](https://at.linkedin.com/in/nikolaus-schiller-37921418)
 
-<a name="project_partners"/>
+
 ## Projekt Partners
 [Vienna University of Economics and Business, Research Institute for Computational Methods. (Projet Coordinator)](https://www.wu.ac.at/en/firm)
 
@@ -214,6 +214,6 @@ model = torch.hub.load('MacOS/ReKlaSat-3D', 'get_minkunet34c')
 
 [Federal Ministry of Defence, Austria.](http://www.bundesheer.at/english/index.shtml)
 
-<a name="funding" />
+
 ## Funding
 This research was funded by the Austrian Research Promotion Agency (FFG) project [“3D Reconstruction and Classification from Very High Resolution Satellite Imagery (ReKlaSat 3D)” (grant agreement No. 859792)](https://projekte.ffg.at/projekt/1847316).
