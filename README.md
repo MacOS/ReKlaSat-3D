@@ -5,20 +5,20 @@
 </p>
 
 # Table of Contents
-[Paper](#paper)
+####[Paper](#paper)
 
-[Abstract](#abstract)
+#####[Abstract](#abstract)
 
-[Figures](#figures)
+#####[Figures](#figures)
 
 
-[General Information](#general_information)
+####[General Information](#general_information)
 
-[Authors by Institution](#authors_by_institution)
+#####[Authors by Institution](#authors_by_institution)
 
-[Project Partners](#project_partners)
+#####[Project Partners](#project_partners)
 
-[Funding](#funding)
+#####[Funding](#funding)
 
 
 <a name="paper" />
