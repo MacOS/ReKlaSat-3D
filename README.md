@@ -1,13 +1,19 @@
-# Generalized Sparse Convolutional Neural Networksfor Semantic Segmentation of Point Clouds Derived from Tri-Stereo Satellite Imagery
+# Generalized Sparse Convolutional Neural Networks for Semantic Segmentation of Point Clouds Derived from Tri-Stereo Satellite Imagery
 
 <p align="center">
     <img width="439" height="263"  src="./ReKlaSat3D_Logo_final_transparent.png">
 </p>
 
 # Table of Contents
+**[1. Instructions](#instructions)**<br>
+**[1.1 Installation Instructions](#installation-instructions)**<br>
+**[1.2 Usage Instructions](#usage-instructions)**<br>
+<br>
 **[2. Paper](#paper)**<br>
 **[2.1 Abstract](#abstract)**<br>
-**[2.3 Figures](#figures)**<br>
+**[2.3 Tables and Figures](#figures)**<br>
+**[2.3.1 Segmentation Results](#segmentation-results)**<br>
+**[2.3.2 Study Area](#study-area)**<br>
 <br>
 **[3. General Information](#general_information)**<br>
 **[3.1 Authors by Institution](#authors_by_institution)**<br>
@@ -15,36 +21,17 @@
 **[3.3 Funding](#funding)**<br>
 
 
-# Paper
+# Instructions
 
-## Abstract
+## Installation Instructions
 
-We study the utility of point clouds derived from tri-stereo satellite imagery for semantic segmentation for generalized sparse convolutional neural networks by the example of an Austrian study area. We examine, in particular, if the distorted geometric information, additional to color, has an influence on the segmentation performance for segmenting clutter, roads, buildings, trees, and vehicles. In this regard, we train a fully convolutional neural network that uses generalized sparse convolution one time solely on geometric information, and one time on geometric as well as color information. We compare the results with a fully convolutional neural network that is trained on images, and a decision tree that is once trained on hand-crafted geometric features, and once trained on hand-crafted geometric as well as color features. The decision tree and the hand-crafted features had been successfully applied to aerial light detection and ranging scans in the literature. Hence, we compare our main interest of study, an unsupervised feature learning technique, with another unsupervised feature learning technique, and a supervised feature learning technique. Our study area is located in Waldviertel (Forest Quarter), a region in Lower Austria. The territory is a hilly region covered mainly by forests, agricultural- and grass-lands. Our classes of interest are heavily unbalanced in this study area. We do not use any data augmentation techniques to counter overfitting, nor do we use any approaches to counter class imbalance because the supervised feature-learning technique does not do these either by default. In this light, we report that the fully convolutional neural network that is trained on the images generally outperforms the other two with a kappa score of over 90\% and an average per class accuracy of 61\%. However, the decision tree trained on colors and coordinates has a 2\% higher accuracy for roads. Our main interest of study, the generalized sparse convolutional neural network, has a 6\% higher kappa score when trained on coordinates and colors, however the average per class accuracy drops by 5\% when trained on both because the network only predicts clutter and trees, the two dominant classes in the data set. We hypothesise, that the main reason for this is the higher feature dimension which requires data augmentation and class imbalance mitigation strategies. This hypothesis is strengthened by the fact that the generalized sparse convolutional neural network has an 65\% accuracy for trees when trained on coordinates, but an 5\% accuracy when trained on coordinates and colors. We open source our 3D models, and our decision tree counter parts. This includes the trained weights after each epoch for the 3D models. That way, others can use our research easily, e.g. to compare our models performance on their data set, e.g. to set a baseline, or for transfer learning.
-
-
-## Figures
-
-<p align="center">
-    <img width="1080" height="520"  src="./Study_area_location.jpg">
-</p>
-
-Waldviertel, Lower Austria: (a) Overview map of Austria with marked location of study area; (b) Pléiades orthophoto of Waldviertel; the selected area used for semantic segmentation is marked with yellow.
-
-
-
-<p align="center">
-    <img src="./classes_all.jpg">
-</p>
-
-Examples of point clouds derived form tri-stereo satellite imagery for each class: (a) Clutter; (b) Roads; (c) Buildings; (c) Trees; (e) Vehicles.
-
-# Requirements
+### Requirements
 - Ubuntu 14.04 or higher
 - Python 3.6 or higher
 - CUDA 10.0 or higher
 - pytorch 1.2 or higher
 
-# Installation
+### Installation
 We recommend that you use [anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) to separate the environment.
 
 
@@ -58,7 +45,7 @@ conda activate py3-mink
 sh install_minkowski_engine.sh
 ```
 
-# How to make a prediction
+## Usage Instructions
 
 ```py
 import torch
@@ -170,6 +157,32 @@ import torch
 
 model = torch.hub.load('MacOS/ReKlaSat-3D', 'get_minkunet34c')
 ```
+
+
+# Paper
+
+## Abstract
+
+We study the utility of point clouds derived from tri-stereo satellite imagery for semantic segmentation for generalized sparse convolutional neural networks by the example of an Austrian study area. We examine, in particular, if the distorted geometric information, additional to color, has an influence on the segmentation performance for segmenting clutter, roads, buildings, trees, and vehicles. In this regard, we train a fully convolutional neural network that uses generalized sparse convolution one time solely on geometric information, and one time on geometric as well as color information. We compare the results with a fully convolutional neural network that is trained on images, and a decision tree that is once trained on hand-crafted geometric features, and once trained on hand-crafted geometric as well as color features. The decision tree and the hand-crafted features had been successfully applied to aerial light detection and ranging scans in the literature. Hence, we compare our main interest of study, an unsupervised feature learning technique, with another unsupervised feature learning technique, and a supervised feature learning technique. Our study area is located in Waldviertel (Forest Quarter), a region in Lower Austria. The territory is a hilly region covered mainly by forests, agricultural- and grass-lands. Our classes of interest are heavily unbalanced in this study area. We do not use any data augmentation techniques to counter overfitting, nor do we use any approaches to counter class imbalance because the supervised feature-learning technique does not do these either by default. In this light, we report that the fully convolutional neural network that is trained on the images generally outperforms the other two with a kappa score of over 90\% and an average per class accuracy of 61\%. However, the decision tree trained on colors and coordinates has a 2\% higher accuracy for roads. Our main interest of study, the generalized sparse convolutional neural network, has a 6\% higher kappa score when trained on coordinates and colors, however the average per class accuracy drops by 5\% when trained on both because the network only predicts clutter and trees, the two dominant classes in the data set. We hypothesise, that the main reason for this is the higher feature dimension which requires data augmentation and class imbalance mitigation strategies. This hypothesis is strengthened by the fact that the generalized sparse convolutional neural network has an 65\% accuracy for trees when trained on coordinates, but an 5\% accuracy when trained on coordinates and colors. We open source our 3D models, and our decision tree counter parts. This includes the trained weights after each epoch for the 3D models. That way, others can use our research easily, e.g. to compare our models performance on their data set, e.g. to set a baseline, or for transfer learning.
+
+
+## Tables and Figures
+
+
+### Study Area
+<p align="center">
+    <img width="1080" height="520"  src="./Study_area_location.jpg">
+</p>
+
+Waldviertel, Lower Austria: (a) Overview map of Austria with marked location of study area; (b) Pléiades orthophoto of Waldviertel; the selected area used for semantic segmentation is marked with yellow.
+
+
+
+<p align="center">
+    <img src="./classes_all.jpg">
+</p>
+
+Examples of point clouds derived form tri-stereo satellite imagery for each class: (a) Clutter; (b) Roads; (c) Buildings; (c) Trees; (e) Vehicles.
 
 
 # General Information
