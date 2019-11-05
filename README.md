@@ -15,7 +15,7 @@ Kurt Hornik,
 Nikolaus Schiller, 
 Olaf Kähler, 
 Ronald Hochreiter:
-Generalized Sparse Convolutional Neural Networks for Semantic Segmentation of Point Clouds Derived from Tri-Stereo Satellite Imagery
+Generalized Sparse Convolutional Neural Networks for Semantic Segmentation of Point Clouds Derived from Tri-Stereo Satellite Imagery. **This paper is currently under Review**
 
 # Table of Contents
 **[1. Instructions](#instructions)**<br>
