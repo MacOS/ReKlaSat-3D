@@ -181,6 +181,19 @@ We study the utility of point clouds derived from tri-stereo satellite imagery f
 
 ## Tables and Figures
 
+### Segmentation Results
+| Models |Precision | Recall | F1 | Kappa | OA | Avg per Class Acc. |
+|:-------|:----------:|:--------:|:---:|:-------:|:----:|:--------------------:|
+|        | %        | %      | %  | %     | %  |                    |
+| baseline A | 64.25 | 64.25 | 64.25 | 47.33 | 64.25 | 20.00 |64.25 |
+| **U-Net based GSCNN (3D)** | | | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates | 56.45 | 56.45 | 56.45 | 39.33 | 56.45 | 24.43 |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 62.53 | 62.53 | 62.53 | 45.49 | 62.53 | 19.99 |
+| **FCN-8s (2D)** | | | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Colors | 96.11 | 96.11 | 96.11 | 90.76 | 96.11 | 61.15 |
+| **Decision Tree (3D)** | | | | | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates | 89.10 | 89.10 | 89.10 | 82.00 | 89.10 | 38.73 |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 93.18 | 93.18 | 93.18 | 86.60 | 93.18 | 58.71 |
 
 ### Study Area
 <p align="center">
