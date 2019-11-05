@@ -39,7 +39,7 @@ The following command creates the conda environment ```py3-mink``` and installs 
 ```sh
 conda env create -f py3-mink.yml
 ```
-To install the Minkowski Engine in the created environment run
+To install the [Minkowski Engine](https://github.com/StanfordVL/MinkowskiEngine#installation) in the created environment run
 ```sh
 conda activate py3-mink
 sh install_minkowski_engine.sh
