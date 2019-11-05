@@ -4,6 +4,19 @@
     <img width="439" height="263"  src="./ReKlaSat3D_Logo_final_transparent.png">
 </p>
 
+This GitHub repository contains the machine learning models described in Stefan Bachhofner, 
+Ana-Maria Loghin, 
+Michael Hornacek, 
+Johannes Otepka, 
+Andrea Siposova, 
+Niklas Schmindinger, 
+Norbert Pfeiffer, 
+Kurt Hornik, 
+Nikolaus Schiller, 
+Olaf Kähler, 
+Ronald Hochreiter:
+Generalized Sparse Convolutional Neural Networks for Semantic Segmentation of Point Clouds Derived from Tri-Stereo Satellite Imagery
+
 # Table of Contents
 **[1. Instructions](#instructions)**<br>
 **[1.1 Installation Instructions](#installation-instructions)**<br>
