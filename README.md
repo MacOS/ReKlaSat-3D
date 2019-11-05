@@ -194,6 +194,7 @@ We study the utility of point clouds derived from tri-stereo satellite imagery f
 | **Decision Tree (3D)** | | | | | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates | 89.10 | 89.10 | 89.10 | 82.00 | 89.10 | 38.73 |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 93.18 | 93.18 | 93.18 | 86.60 | 93.18 | 58.71 |
+
 Quantitative comparison of the GSCNN, FCN-8s, and the decision tree. We use five conventionally used metrics obtained from the segmentation results.
 
 | Models |Clutter | Roads| Buildings | Trees | Vehicles | 
@@ -208,6 +209,7 @@ Quantitative comparison of the GSCNN, FCN-8s, and the decision tree. We use five
 | **Decision Tree (3D)** | | | | | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates | 93.90 | 00.00 | 11.71 | 88.02 | 00.00 |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 95.80 | 24.75 | 79.13 | 93.88 | 00.00 |
+
 Per class accuracies for the GSCNN, the FCN-8s, and the decision tree.
 
 ### Study Area
