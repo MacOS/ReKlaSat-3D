@@ -154,6 +154,30 @@ def coordinates_colors_epoch(epoch=50, progress=True):
     return model
 
 
+def coordinates_colors_weighted(progress=True):
+    EPOCH = 400
+
+    model = MinkUNet34C(in_channels=CC_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
+
+    url = f'{model_urls_base["coordinates_colors_weighted"]}/{STATE_DICT_PREFIX}{EPOCH}{STATE_DICT_SUFIX}'
+
+    state_dict = torch.hub.load_state_dict_from_url(model_urls['coordinates_colors'],
+                                                    progress=progress)
+
+    return model.load_state_dict(state_dict)
+
+
+def coordinates_colors_weighted_epoch(epoch=400, progress=True):
+    model = MinkUNet34C(in_channels=CC_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
+
+    url = f'{model_urls_base["coordinates_colors_weighted"]}/{STATE_DICT_PREFIX}{epoch}{STATE_DICT_SUFIX}'
+
+    state_dict = torch.hub.load_state_dict_from_url(model_urls['coordinates_colors'],
+                                                    progress=progress)
+
+    return model.load_state_dict(state_dict)
+
+
 def get_minkunet34c(progress=True, **kwargs):
     '''
     Returns the model MinkUNet34C from Choey et al.
