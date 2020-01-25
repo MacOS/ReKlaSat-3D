@@ -189,7 +189,7 @@ Quantitative overall comparison of the GSCNN, FCN-8s, and the decision tree. We 
 |        | %        | %      | %  | %     | %  |                    |
 | baseline A | 12.85 | 20.00 | 15.64 | 47.33 | 64.25 | 20.00 |
 | **U-Net based GSCNN (3D)** | | | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates               | 23.69 | 24.33 | 23.30 | 38.90 | 56.01 | 24.32 |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates               | *23.69* | *24.33* | *23.30* | *38.90* | *56.01* | *24.32* |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors       | 19.31 | 19.98 | 17.38 | 45.07 | 62.14 | 19.97 |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors, W.L. | 21.92 | 22.24 | 21.36 | 34.30 | 51.07 | 22.22 |
 | **FCN-8s (2D)** | | | | | | | |
