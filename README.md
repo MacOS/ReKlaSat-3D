@@ -198,20 +198,6 @@ Quantitative overall comparison of the GSCNN, FCN-8s, and the decision tree. We 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates         | 43.89 | 38.73 | 39.54 | 82.00 | 89.10 | 38.73 |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 61.03 | 58.72 | 58.96 | 86.60 | 93.18 | 58.71 |
 
-| Models |Clutter | Roads| Buildings | Trees | Vehicles | 
-|:-------|:----------:|:--------:|:---:|:-------:|:----:|
-|        | %        | %      | %  | %     | % |
-| baseline A | 100.00 | 00.00 | 00.00 | 00.00 | 00.00 | 00.00 |
-| **U-Net based GSCNN (3D)** | | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates | 54.63 | 2.25 | 00.00 | 65.26 | 00.00 |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 94.58 | 00.00 | 00.00 | 5.41 | 00.00 |
-| **FCN-8s (2D)** | | | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Colors | 98.19 | 22.89 | 86.44 | 98.22 | 00.00 |
-| **Decision Tree (3D)** | | | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates | 93.90 | 00.00 | 11.71 | 88.02 | 00.00 |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 95.80 | 24.75 | 79.13 | 93.88 | 00.00 |
-
-Per class accuracies for the GSCNN, the FCN-8s, and the decision tree.
 
 ### Study Area
 <p align="center">
