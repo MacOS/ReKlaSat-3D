@@ -193,7 +193,7 @@ Quantitative overall comparison of the GSCNN, FCN-8s, and the decision tree. We 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors       | 19.31 | 19.98 | 17.38 | 45.07 | 62.14 | 19.97 |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors, W.L. | 21.92 | 22.24 | 21.36 | 34.30 | 51.07 | 22.22 |
 | **FCN-8s (2D)** | | | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Colors | 62.43 | 61.15 | 59.12 | 90.76 | 96.11 | 61.15 |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Colors | **62.43** | **61.15** | **59.12** | **90.76** | **96.11** | **61.15** |
 | **Decision Tree (3D)** | | | | | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates         | 43.89 | 38.73 | 39.54 | 82.00 | 89.10 | 38.73 |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 61.03 | 58.72 | 58.96 | 86.60 | 93.18 | 58.71 |
