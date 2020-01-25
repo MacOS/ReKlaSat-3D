@@ -182,20 +182,21 @@ We study the utility of point clouds derived from tri-stereo satellite imagery f
 ## Tables and Figures
 
 ### Segmentation Results
-| Models |Precision | Recall | F1 | Kappa | OA | Avg per Class Acc. |
+Quantitative overall comparison of the GSCNN, FCN-8s, and the decision tree. We use six conventionally used metrics obtained from the segmentation results. Please see the paper for a class level comparison.
+
+| Models | Avg. Precision | Avg. Recall | Avg. F1 | Kappa | OA | Avg per Class Acc. |
 |:-------|:----------:|:--------:|:---:|:-------:|:----:|:--------------------:|
 |        | %        | %      | %  | %     | %  |                    |
-| baseline A | 64.25 | 64.25 | 64.25 | 47.33 | 64.25 | 20.00 |64.25 |
+| baseline A | 12.85 | 20.00 | 15.64 | 47.33 | 64.25 | 20.00 |
 | **U-Net based GSCNN (3D)** | | | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates | 56.45 | 56.45 | 56.45 | 39.33 | 56.45 | 24.43 |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 62.53 | 62.53 | 62.53 | 45.49 | 62.53 | 19.99 |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates               | 23.69 | 24.33 | 23.30 | 38.90 | 56.01 | 24.32 |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors       | 19.31 | 19.98 | 17.38 | 45.07 | 62.14 | 19.97 |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors, W.L. | 21.92 | 22.24 | 21.36 | 34.30 | 51.07 | 22.22 |
 | **FCN-8s (2D)** | | | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Colors | 96.11 | 96.11 | 96.11 | 90.76 | 96.11 | 61.15 |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Colors | 62.43 | 61.15 | 59.12 | 90.76 | 96.11 | 61.15 |
 | **Decision Tree (3D)** | | | | | | | |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates | 89.10 | 89.10 | 89.10 | 82.00 | 89.10 | 38.73 |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 93.18 | 93.18 | 93.18 | 86.60 | 93.18 | 58.71 |
-
-Quantitative comparison of the GSCNN, FCN-8s, and the decision tree. We use five conventionally used metrics obtained from the segmentation results.
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates         | 43.89 | 38.73 | 39.54 | 82.00 | 89.10 | 38.73 |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 61.03 | 58.72 | 58.96 | 86.60 | 93.18 | 58.71 |
 
 | Models |Clutter | Roads| Buildings | Trees | Vehicles | 
 |:-------|:----------:|:--------:|:---:|:-------:|:----:|
