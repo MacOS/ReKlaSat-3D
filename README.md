@@ -182,7 +182,7 @@ We study the utility of point clouds derived from tri-stereo satellite imagery f
 ## Tables and Figures
 
 ### Segmentation Results
-Quantitative overall comparison of the GSCNN, FCN-8s, and the decision tree. We use six conventionally used metrics obtained from the segmentation results. Please see the paper for a class level comparison.
+Quantitative overall comparison of the GSCNN, FCN-8s, and the decision tree. We use six conventionally used metrics obtained from the segmentation results. We highlight the best values for each metric (hence in each column) in **bold**. And the best values among the GSCNN models in *italic*. Please see the paper for a class level comparison.
 
 | Models | Avg. Precision | Avg. Recall | Avg. F1 | Kappa | OA | Avg per Class Acc. |
 |:-------|:----------:|:--------:|:---:|:-------:|:----:|:--------------------:|
