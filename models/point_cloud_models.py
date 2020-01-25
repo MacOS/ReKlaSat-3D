@@ -39,8 +39,8 @@ STATE_DICT_PREFIX = 'STATE_DICT_EXPERIMENT_ITERATION_'
 STATE_DICT_SUFIX = '.pt'
 MODELS_BASE_URL = 'MacOS/ReKlaSat-3D'
 model_urls_base = {
-    'coordinates': f'{MODELS_BASE_URL}/coordinates',
-    'coordinates_colors': f'{MODELS_BASE_URL}/coordinates_colors',
+    'coordinates': f'{MODELS_BASE_URL}/v0.1-alpha',
+    'coordinates_colors': f'{MODELS_BASE_URL}/v0.2-alpha',
     'coordinates_colors_weighted': f'{MODELS_BASE_URL}/coordinates_colors_weighted'
 }
 
