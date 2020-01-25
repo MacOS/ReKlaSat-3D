@@ -199,6 +199,8 @@ Quantitative overall comparison of the GSCNN, FCN-8s, and the decision tree. We 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 61.03 | 58.72 | 58.96 | 86.60 | 93.18 | 58.71 |
 
 Overall accuracy progress over epochs for the GSCNN models. Here, only the first 50 epochs of the model that uses the weighted loss is shown.
+
+<!-- Code taken from https://stackoverflow.com/questions/39777166/display-pdf-image-in-markdown -->
 <object data="./overall_accuracy_gscnn_models.pdf" type="application/pdf" width="1080px" height="520px">
     <embed src="./overall_accuracy_gscnn_models.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./overall_accuracy_gscnn_models.pdf">Download PDF</a>.</p>
