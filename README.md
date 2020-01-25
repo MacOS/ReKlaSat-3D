@@ -199,6 +199,13 @@ Quantitative overall comparison of the GSCNN, FCN-8s, and the decision tree. We 
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Coordinates, Colors | 61.03 | 58.72 | 58.96 | 86.60 | 93.18 | 58.71 |
 
 
+<object data="./overall_accuracy_gscnn_models.pdf" type="application/pdf" width="1080px" height="520px">
+    <embed src="./overall_accuracy_gscnn_models.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="./overall_accuracy_gscnn_models.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
+
+
 ### Study Area
 <p align="center">
     <img width="1080" height="520"  src="./Study_area_location.jpg">
