@@ -33,6 +33,7 @@ from examples.minkunet import MinkUNet34C
 __all__ = [
     'Coordinates',
     'CoordinatesColors',
+    'CoordinatesColorsWeighted'
 ]
 
 STATE_DICT_PREFIX = 'STATE_DICT_EXPERIMENT_ITERATION_'
