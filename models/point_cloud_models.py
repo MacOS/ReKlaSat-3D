@@ -75,9 +75,7 @@ def coordinates(progress=True):
     state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
-    model.load_state_dict(state_dict)
-
-    return model
+    return model.load_state_dict(state_dict)
 
 
 def coordinates_epoch(epoch=50, progress=True):
@@ -100,8 +98,7 @@ def coordinates_epoch(epoch=50, progress=True):
     state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
-    model.load_state_dict(state_dict)
-    return model
+    return model.load_state_dict(state_dict)
 
 
 def coordinates_colors(progress=True):
@@ -125,9 +122,7 @@ def coordinates_colors(progress=True):
     state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
-    model.load_state_dict(state_dict)
-
-    return model
+    return model.load_state_dict(state_dict)
 
 
 def coordinates_colors_epoch(epoch=50, progress=True):
@@ -150,8 +145,7 @@ def coordinates_colors_epoch(epoch=50, progress=True):
     state_dict = torch.hub.load_state_dict_from_url(model_urls['coordinates_colors'],
                                                     progress=progress)
 
-    model.load_state_dict(state_dict)
-    return model
+    return model.load_state_dict(state_dict)
 
 
 def coordinates_colors_weighted(progress=True):
