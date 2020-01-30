@@ -39,6 +39,14 @@ Generalized Sparse Convolutional Neural Networks for Semantic Segmentation of Po
 ## Installation Instructions
 
 ### Requirements
+
+#### With PytorchHub (Recommended)
+- Ubuntu 14.04 or higher
+- Python 3.6 or higher
+- CUDA 10.0 or higher
+- pytorch 1.3 or higher
+
+#### Without PytorchHub
 - Ubuntu 14.04 or higher
 - Python 3.6 or higher
 - CUDA 10.0 or higher
