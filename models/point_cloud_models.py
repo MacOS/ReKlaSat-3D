@@ -92,7 +92,7 @@ def coordinates(progress=True):
     state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
-    return model.load_state_dict(state_dict)
+    return model.load_state_dict(state_dict["model_state_dict"])
 
 
 def coordinates_epoch(epoch=50, progress=True):
@@ -115,7 +115,7 @@ def coordinates_epoch(epoch=50, progress=True):
     state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
-    return model.load_state_dict(state_dict)
+    return model.load_state_dict(state_dict["model_state_dict"])
 
 
 def coordinates_colors(progress=True):
@@ -139,7 +139,7 @@ def coordinates_colors(progress=True):
     state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
-    return model.load_state_dict(state_dict)
+    return model.load_state_dict(state_dict["model_state_dict"])
 
 
 def coordinates_colors_epoch(epoch=50, progress=True):
@@ -162,7 +162,7 @@ def coordinates_colors_epoch(epoch=50, progress=True):
     state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
-    return model.load_state_dict(state_dict)
+    return model.load_state_dict(state_dict["model_state_dict"])
 
 
 def coordinates_colors_weighted(progress=True):
@@ -186,7 +186,7 @@ def coordinates_colors_weighted(progress=True):
     state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
-    return model.load_state_dict(state_dict)
+    return model.load_state_dict(state_dict["model_state_dict"])
 
 
 def coordinates_colors_weighted_epoch(epoch=400, progress=True):
@@ -209,7 +209,7 @@ def coordinates_colors_weighted_epoch(epoch=400, progress=True):
     state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
-    return model.load_state_dict(state_dict)
+    return model.load_state_dict(state_dict["model_state_dict"])
 
 
 def get_minkunet34c(progress=True, **kwargs):
