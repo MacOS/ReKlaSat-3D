@@ -160,7 +160,6 @@ def coordinates_colors_weighted(progress=True):
     and colors (in_channels=6) with weights, and median class weights, after 400 Epochs.
 
     Args:
-        epoch (int): Specifies the class weights to be returned.
         progress (bool): If True, displays a progress bar of the download to stderr.
 
     Example:
