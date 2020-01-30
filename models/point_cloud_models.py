@@ -41,7 +41,7 @@ MODELS_BASE_URL = 'MacOS/ReKlaSat-3D'
 model_urls_base = {
     'coordinates': f'{MODELS_BASE_URL}/v0.1-alpha',
     'coordinates_colors': f'{MODELS_BASE_URL}/v0.2-alpha',
-    'coordinates_colors_weighted': f'{MODELS_BASE_URL}/coordinates_colors_weighted'
+    'coordinates_colors_weighted': f'{MODELS_BASE_URL}/v0.4-alpha'
 }
 
 # Number of in in_channels for coordinates.
