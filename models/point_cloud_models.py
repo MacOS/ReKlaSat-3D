@@ -155,6 +155,18 @@ def coordinates_colors_epoch(epoch=50, progress=True):
 
 
 def coordinates_colors_weighted(progress=True):
+    '''
+    Returns the model MinkUNet34C from Choey et al. trained on coordinates
+    and colors (in_channels=6) with weights, and median class weights, after 400 Epochs.
+
+    Args:
+        epoch (int): Specifies the class weights to be returned.
+        progress (bool): If True, displays a progress bar of the download to stderr.
+
+    Example:
+        > import torch
+        > model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_colors_weighted')
+    '''
     EPOCH = 400
 
     model = MinkUNet34C(in_channels=CC_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
