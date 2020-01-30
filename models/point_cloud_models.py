@@ -159,7 +159,7 @@ def coordinates_colors_epoch(epoch=50, progress=True):
 
     url = f'{model_urls_base["coordinates_colors"]}/{STATE_DICT_PREFIX}{epoch}{STATE_DICT_SUFIX}'
 
-    state_dict = torch.hub.load_state_dict_from_url(model_urls['coordinates_colors'],
+    state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
     return model.load_state_dict(state_dict)
@@ -183,7 +183,7 @@ def coordinates_colors_weighted(progress=True):
 
     url = f'{model_urls_base["coordinates_colors_weighted"]}/{STATE_DICT_PREFIX}{EPOCH}{STATE_DICT_SUFIX}'
 
-    state_dict = torch.hub.load_state_dict_from_url(model_urls['coordinates_colors'],
+    state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
     return model.load_state_dict(state_dict)
@@ -206,7 +206,7 @@ def coordinates_colors_weighted_epoch(epoch=400, progress=True):
 
     url = f'{model_urls_base["coordinates_colors_weighted"]}/{STATE_DICT_PREFIX}{epoch}{STATE_DICT_SUFIX}'
 
-    state_dict = torch.hub.load_state_dict_from_url(model_urls['coordinates_colors'],
+    state_dict = torch.hub.load_state_dict_from_url(url,
                                                     progress=progress)
 
     return model.load_state_dict(state_dict)
