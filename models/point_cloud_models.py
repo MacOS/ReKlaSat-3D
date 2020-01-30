@@ -52,7 +52,7 @@ CC_IN_CHANNELS = 6
 # Dimensionality of space.
 SPACE_DIM = 3
 # Number of classes.
-NUM_CLASSES = 6
+NUM_CLASSES = 5
 
 
 def get_coordinates_model():
