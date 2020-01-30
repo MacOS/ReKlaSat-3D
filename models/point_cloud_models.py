@@ -55,6 +55,22 @@ SPACE_DIM = 3
 NUM_CLASSES = 6
 
 
+def get_coordinates_model():
+    '''
+        Returns MinkUNet34C with 3 input channels for
+        x, y, and z.
+    '''
+    return MinkUNet34C(in_channels=C_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
+
+
+def get_coordinates_colors_model():
+    '''
+        Returns MinkUNet34C with 6 input channels for
+        x, y, z, red, green, and blue.
+    '''
+    return MinkUNet34C(in_channels=CC_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
+
+
 def coordinates(progress=True):
     '''
     Returns the model MinkUNet34C from Choey et al. trained on coordinates
@@ -69,7 +85,7 @@ def coordinates(progress=True):
     '''
     EPOCH = 50
 
-    model = MinkUNet34C(in_channels=C_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
+    model = get_coordinates_model()
 
     url = f'{model_urls_base["coordinates"]}/{STATE_DICT_PREFIX}{EPOCH}{STATE_DICT_SUFIX}'
 
@@ -92,7 +108,7 @@ def coordinates_epoch(epoch=50, progress=True):
         > import torch
         > model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_epoch', epoch=40)
     '''
-    model = MinkUNet34C(in_channels=C_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
+    model = get_coordinates_model()
 
     url = f'{model_urls_base["coordinates"]}/{STATE_DICT_PREFIX}{epoch}{STATE_DICT_SUFIX}'
 
@@ -116,7 +132,7 @@ def coordinates_colors(progress=True):
     '''
     EPOCH = 50
 
-    model = MinkUNet34C(in_channels=CC_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
+    model = get_coordinates_colors_model()
 
     url = f'{model_urls_base["coordinates_colors"]}/{STATE_DICT_PREFIX}{EPOCH}{STATE_DICT_SUFIX}'
 
@@ -139,7 +155,7 @@ def coordinates_colors_epoch(epoch=50, progress=True):
         > import torch
         > model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_colors_epoch', epoch=40)
     '''
-    model = MinkUNet34C(in_channels=CC_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
+    model = get_coordinates_colors_model()
 
     url = f'{model_urls_base["coordinates_colors"]}/{STATE_DICT_PREFIX}{epoch}{STATE_DICT_SUFIX}'
 
@@ -163,7 +179,7 @@ def coordinates_colors_weighted(progress=True):
     '''
     EPOCH = 400
 
-    model = MinkUNet34C(in_channels=CC_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
+    model = get_coordinates_colors_model()
 
     url = f'{model_urls_base["coordinates_colors_weighted"]}/{STATE_DICT_PREFIX}{EPOCH}{STATE_DICT_SUFIX}'
 
@@ -186,7 +202,7 @@ def coordinates_colors_weighted_epoch(epoch=400, progress=True):
         > import torch
         > model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_colors_weighted_epoch')
     '''
-    model = MinkUNet34C(in_channels=CC_IN_CHANNELS, out_channels=NUM_CLASSES, D=SPACE_DIM)
+    model = get_coordinates_colors_model()
 
     url = f'{model_urls_base["coordinates_colors_weighted"]}/{STATE_DICT_PREFIX}{epoch}{STATE_DICT_SUFIX}'
 
