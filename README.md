@@ -135,7 +135,7 @@ print(entrypoints)
 ```
 
 
-## Load the coordinates Convolutional Neural Network
+## Load the model and weights from the coordinates experiments
 
 ```py
 import torch
@@ -149,7 +149,7 @@ import torch
 model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_epoch', epoch=40)
 ```
 
-## Load the coordinates and colors Convolutional Neural Network
+## Load the model and weights from the coordinates and colors experiments
 
 ```py
 import torch
@@ -163,7 +163,7 @@ import torch
 model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_colors_epoch', epoch=40)
 ```
 
-## Load the coordinates and colors Convolutional Neural Network that were trained with median class weights.
+## Load the model and weights from the coordinates and colors with median class weights experiments
 
 ```py
 import torch
