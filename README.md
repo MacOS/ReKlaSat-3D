@@ -163,6 +163,20 @@ import torch
 model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_colors_epoch', epoch=40)
 ```
 
+## Load the coordinates and colors Convolutional Neural Network that were trained with median class weights.
+
+```py
+import torch
+
+model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_colors_weighted')
+```
+
+```py
+import torch
+
+model = torch.hub.load('MacOS/ReKlaSat-3D', 'coordinates_colors_weighted_epoch', epoch=149)
+```
+
 ## Only get MinkUNet34C
 
 ```py
