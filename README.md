@@ -17,6 +17,12 @@ Olaf Kähler,
 Ronald Hochreiter:
 Generalized Sparse Convolutional Neural Networks for Semantic Segmentation of Point Clouds Derived from Tri-Stereo Satellite Imagery. <span style="color:red"> **Accepted** </span>
 
+# ToDo List
+* Add docker
+* Add python training script for GSCNN
+* Add R training script for the decission tree
+* Release Data to public (if possible)
+
 # Table of Contents
 **[1. Instructions](#instructions)**<br>
 **[1.1 Installation Instructions](#installation-instructions)**<br>
