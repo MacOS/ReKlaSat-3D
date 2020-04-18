@@ -24,12 +24,14 @@ Generalized Sparse Convolutional Neural Networks for Semantic Segmentation of Po
 	journal={Remote Sensing},
 	volume={12},
 	number={8},
-	pages={1289},
+	article-number={1289},
 	year={2020},
 	month={April},
 	day={18},
 	publisher={Multidisciplinary Digital Publishing Institute},
-    url={https://www.mdpi.com/2072-4292/12/8/1289#cite}
+    url={https://www.mdpi.com/2072-4292/12/8/1289#cite},
+    issn={2027-4292},
+    doi={10.3390/rs12081289}
 }
 ```
 
